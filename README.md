@@ -1,10 +1,4 @@
-Fede, ok, **lo formatto per README.md** in modo pulito, leggibile, professionale e con *GitHub scritto normalmente*, senza markdown che lo trasforma in link o stile strano.
 
-Ti restituisco una versione **perfetta da incollare** nel tuo README.
-
----
-
-# 🟢 **README.md formattato correttamente**
 
 ```markdown
 # new-project

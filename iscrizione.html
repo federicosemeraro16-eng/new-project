@@ -6,22 +6,19 @@
     <title>Form di iscrizione - capitolo 3</title>
   </head>
   <body>
+    <a href="#contenuto-principale">Skip to main content</a>
     <header>
       <nav id="indice">
         <ul>
           <li><a href="index.html">Scheda profilo</a></li>
-          <li><a href="#chi-sono">Chi Sono?</a></li>
-          <li><a href="#competenze">Competenze</a></li>
-          <li><a href="#istruzione">Istruzione</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <a href="#contenuto">Skip to the content</a>
+      <main id="contenuto-principale">
+        <h1>Candidati</h1>
 
       <!-- TO DO: Fix accessibility and aria on the form -->
-      <form action="candidature" method="post" onsubmit="alert('Registrazione avvenuta con successo')">
-        <h1>Candidati</h1>
+      <form action="candidature" method="post">
         <fieldset>
           <legend>I tuoi dati</legend>
           <label for="name">Nome</label>
@@ -47,6 +44,8 @@
             type="number"
             step="1"
             required
+            min="18"
+            max="120"
             id="age"
             name="age"
             placeholder="18"
@@ -85,6 +84,7 @@
           >
         </fieldset>
         <fieldset>
+          <legend>Situazione occupazionale</legend>
           <label for="disponibilità-lavoro"
             >Sei attualmente alla ricerca di lavoro?</label
           >
@@ -94,14 +94,14 @@
               Sono attualmente occupato e non mi interessa cambiare lavoro
             </option>
           </select>
-          <label for="disponibiltà-trasferimento">Sei disponibile a trasferirti</label>
-          <select name="disponibiltà-trasferimento" id="disponibiltà-trasferimento">
+          <label for="disponibilità-trasferimento">Sei disponibile a trasferirti</label>
+          <select name="disponibilità-trasferimento" id="disponibilità-trasferimento">
             <option>Si,sono disponibile al trasferimento</option>
             <option>No,non sono disponibile al trasferimento</option>
           </select>
         </fieldset>
         <button type="submit">Completa la tua iscrizione</button>
-        <button type="reset">Reset</button>
+        
       </form>
     </main>
     <footer>

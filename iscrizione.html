@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form di iscrizione - capitolo 3</title>
   </head>
   <body>
@@ -14,10 +14,9 @@
         </ul>
       </nav>
     </header>
-      <main id="contenuto-principale">
-        <h1>Candidati</h1>
+    <main id="contenuto-principale">
+      <h1>Candidati</h1>
 
-      <!-- TO DO: Fix accessibility and aria on the form -->
       <form action="candidature" method="post">
         <fieldset>
           <legend>I tuoi dati</legend>
@@ -29,7 +28,7 @@
             placeholder="Federico"
             autocomplete="name"
             required
-          >
+          />
           <label for="surname">Cognome</label>
           <input
             type="text"
@@ -38,7 +37,7 @@
             placeholder="Semeraro"
             required
             autocomplete="family-name"
-          >
+          />
           <label for="age">età</label>
           <input
             type="number"
@@ -49,7 +48,7 @@
             id="age"
             name="age"
             placeholder="18"
-          >
+          />
         </fieldset>
         <fieldset>
           <legend>I tuoi contatti</legend>
@@ -61,11 +60,10 @@
             required
             placeholder="federico@federicoesempio.it"
             autocomplete="email"
-          >
+          />
           <label for="tel-number">Numero di telefono</label>
           <input
             type="tel"
-            
             minlength="11"
             maxlength="12"
             placeholder="3421559998"
@@ -73,7 +71,7 @@
             name="tel-number"
             id="tel-number"
             autocomplete="tel"
-          >
+          />
           <label for="linkedin-url">Inserisci il tuo indirizzo LinkedIn</label>
           <input
             type="url"
@@ -81,7 +79,7 @@
             id="linkedin-url"
             placeholder="https://www.linkedin.com/in/federico-semeraro-785289113/"
             required
-          >
+          />
         </fieldset>
         <fieldset>
           <legend>Situazione occupazionale</legend>
@@ -94,16 +92,46 @@
               Sono attualmente occupato e non mi interessa cambiare lavoro
             </option>
           </select>
-          <label for="disponibilità-trasferimento">Sei disponibile a trasferirti</label>
-          <select name="disponibilità-trasferimento" id="disponibilità-trasferimento">
+          <label for="disponibilità-trasferimento"
+            >Sei disponibile a trasferirti</label
+          >
+          <select
+            name="disponibilità-trasferimento"
+            id="disponibilità-trasferimento"
+          >
             <option>Si,sono disponibile al trasferimento</option>
             <option>No,non sono disponibile al trasferimento</option>
           </select>
         </fieldset>
         <button type="submit">Completa la tua iscrizione</button>
-        
       </form>
-    </main>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Ruolo/corso</th>
+            <th scope="col">Focus Principale</th>
+            <th scope="col">Linguaggi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Frontend Developer</th>
+            <td>Interfaccia utente,UI/UX,logica lato client</td>
+            <td>HTML,css,Javascript,React,Vue</td>
+          </tr>
+          <tr>
+            <th scope="row">Backend Developer</th>
+            <td>Logica server,database,API,sicurezza</td>
+            <td>Python, Node.js,JAVA,SQL, Docker</td>
+          </tr>
+          <tr>
+            <th scope="row">Full-Stack Developer</th>
+            <td>Sviluppo completo(Frontend + Backend + AI)</td>
+            <td>HTML,CSS,JS,Python,SQL,Strumenti AI</td>
+          </tr>
+        </tbody>
+      </table>
+          </main>
     <footer>
       <p>&copy; Federico Semeraro</p>
     </footer>
